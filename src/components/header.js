@@ -15,7 +15,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 
-const pages = ['ir al inicio', 'ver mas proyectos', 'contacto'];
+const pages = ['ver mas proyectos', 'contacto'];
 const settings = ['Perfil', 'Cuenta', 'Cerrar sesion'];
 
 function ResponsiveAppBar() {
@@ -39,6 +39,8 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <GitHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+
+          {/* LETRA / LOGO "GITHUB SEARCHER" */}
           <Typography
             variant="h6"
             noWrap
@@ -48,8 +50,8 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontWeight: 900,
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
@@ -110,7 +112,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            LOGO gaaaaa
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -129,10 +131,10 @@ function ResponsiveAppBar() {
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
 
                 {/* FETCH USER */}
-             
-            <Avatar alt="waldir" src="/static/images/avatar/2.jpg" />
 
-         
+{/*                 <Avatar alt="waldir" src="/static/images/avatar/2.jpg" />
+ */}
+
               </IconButton>
             </Tooltip>
             <Menu

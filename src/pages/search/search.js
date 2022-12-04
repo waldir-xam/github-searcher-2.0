@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Container, Grid, TextField } from "@mui/material";
+import "./searchAditional.css"
+
 
 const Search = () => {
   const [username, setUsername] = useState("");
@@ -25,12 +27,13 @@ const Search = () => {
             label="Escribe el usuario que quieres buscar"
             onChange={handleInputChange}
             value={username}
+            style={{ backgroundColor: "#fff", borderRadius: ".7rem" }}
             fullWidth
           />
         </Grid>
         <Grid item xs={12}>
           <Link to={`/users/${username}`} style={{ textDecoration: "none" }}>
-            <Button variant="contained" fullWidth>
+            <Button variant="contained" fullWidth style={{ borderRadius: ".7rem", fontWeight: "600" }}>
               Buscar
             </Button>
           </Link>
