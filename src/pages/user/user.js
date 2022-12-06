@@ -42,7 +42,7 @@ const User = () => {
 
   return (
     <Container maxWidth="md" style={{
-      backgroundColor: "#28336f", color: "#fff", borderRadius:"1em"
+      backgroundColor: "#28336f", color: "#fff", borderRadius: "1em"
     }}>
       {userDetail && (
         <Box mt={10}>
@@ -124,9 +124,15 @@ const User = () => {
                           <Typography variant="h6" fontWeight="800">
                             {repo.name}
                           </Typography>
-                          <Typography variant="body1" fontWeight="200"> Lenguaje://
-                            {repo.language}
+                          <Typography variant="body1" fontWeight="200"> 
+                          Lenguaje:// {repo.language}
                           </Typography>
+                          <Typography variant="body1" fontWeight="400" fontStyle="italic" fontSize="0.8em">
+                            {repo.visibility} <br />
+                            Fecha de creacion: {repo.created_at} <br />
+                            Ultima actualización: {repo.updated_at}
+                          </Typography>
+
                         </CardContent>
                       </Card>
                     </Box>

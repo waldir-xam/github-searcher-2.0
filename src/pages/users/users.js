@@ -28,7 +28,7 @@ const Users = () => {
   return (
     <Container maxWidth="md">
       <Box mt={10}>
-        <Typography variant="h6">
+        <Typography variant="h6" color="#B2B2B2">
           Resultado de la busqueda del usuario: @{username}
         </Typography>
       </Box>
