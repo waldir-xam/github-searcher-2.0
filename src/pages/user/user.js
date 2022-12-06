@@ -124,15 +124,17 @@ const User = () => {
                           <Typography variant="h6" fontWeight="800">
                             {repo.name}
                           </Typography>
-                          <Typography variant="body1" fontWeight="200"> 
-                          Lenguaje:// {repo.language}
+                          <Typography variant="body1" fontWeight="200">
+                            Lenguaje:// {repo.language}
                           </Typography>
                           <Typography variant="body1" fontWeight="400" fontStyle="italic" fontSize="0.8em">
                             {repo.visibility} <br />
                             Fecha de creacion: {repo.created_at} <br />
                             Ultima actualización: {repo.updated_at}
                           </Typography>
-
+                          <Button variant="contained" fullWidth href={`${repo.html_url}`} mt={3}>
+                            Ir al Repo en Github
+                          </Button>
                         </CardContent>
                       </Card>
                     </Box>
